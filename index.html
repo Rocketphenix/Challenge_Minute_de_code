@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./public/css/style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header>
+			<form id="recupImg">
+				<label>Insérer votre image: </label>
+				<input type="file" id="newImage" accept="image/*" />
+				<input type="submit" />
+			</form>
+		</header>
+
+		<main>
+			<button class="arrow" id="btnLeft"></button>
+			<div id="dotter"></div>
+			<div id="slider">
+				<div class="img">
+					<img src="./public/img/Aquwa_City.jpg" alt="Aquwa in city" />
+				</div>
+				<div class="img">
+					<img src="./public/img/breath of the wild.jpg" alt="Zelda" />
+				</div>
+				<div class="img">
+					<img src="./public/img/raoul-marini-render-finale-hs.jpg" alt="Heartstone" />
+				</div>
+				<div class="img">
+					<img src="./public/img/NeuroConcert.jpg" alt="Neuro Concert" />
+				</div>
+			</div>
+			<button class="arrow" id="btnRight"></button>
+		</main>
+		<script src="script.js"></script>
+	</body>
+</html>
