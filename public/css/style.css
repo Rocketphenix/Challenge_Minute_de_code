@@ -14,7 +14,6 @@ body {
 	background-color: #bfd9f4;
 	padding: 20px;
 }
-
 .formulaire img {
 	width: 15%;
 	height: 15%;
@@ -31,11 +30,9 @@ body {
 	width: 34%;
 	border-radius: 0 20px 20px 0;
 }
-
 .bar:not(:first-child) {
 	margin-left: -10px;
 }
-
 .bar:last-child {
 	border-radius: 0;
 }
@@ -46,6 +43,7 @@ body {
 	background-color: #c0aee3;
 	padding: 8px;
 }
+
 .form {
 	border: 1px solid #545b75;
 	height: 92%;

@@ -73,6 +73,7 @@ export default {
 	},
 
 	methods: {
+		// Permet d'avoir une bar qui "avance" au fur et a mesure du formulaire
 		barStyle(valueNeeded, index) {
 			const nbrBars = this.stepNeeded.length; // Nombre total de barres
 			return {
@@ -83,6 +84,7 @@ export default {
 
 		validateForm() {
 			switch (this.step) {
+				// Première étape le nom prénom on vérifie que ce soit bien un nom et un prénom
 				case 0:
 					const namePattern = /^[A-Za-zÀ-ÖØ-öø-ÿ-]+$/; // Lettres et tirets autorisés
 					if (!namePattern.test(this.partOne.firstName) || !namePattern.test(this.partOne.lastName)) {
@@ -93,6 +95,7 @@ export default {
 					}
 					break;
 
+				// Deuxième étape on vérifie juste que l'histoire ne soit pas trop long et qu'il n'y est pas de contenu dangereux
 				case 1:
 					const trimmedMessage = this.histoire.trim();
 					if (trimmedMessage.length > 500) {
@@ -105,6 +108,7 @@ export default {
 					}
 					break;
 
+				// Dernière étape on vérifie juste que l'utilisateur a choisi une option
 				case 2:
 					if (this.appreciation != "") {
 						this.errorMessage = "";
